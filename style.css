@@ -1,0 +1,239 @@
+/*
+COLORS:
+
+Black: #000
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: white;
+}  
+
+.header  {
+    height: 95vh;
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 1), 
+        rgba(0, 0, 0, 0.50)
+      ), url(poker.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.heading-primary    {
+    display: block;
+    text-transform: uppercase;
+    font-size: 6vh;
+    text-shadow: 1vh 1vh black;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hedori {
+    position: absolute;
+    left: 15%;
+}
+
+  
+
+.booking    {
+    display: block;
+    background: url(pokerBG.png);
+    background-size: cover;
+    height: 50vh;
+    background-position: top;
+    position: relative;
+}
+
+.booking > .texten {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-shadow: 0.25vh 0.25vh black;
+    transform: translate(-50%, -50%);
+}    
+
+.booking > .texten h1   {
+    font-size: 5vh;
+}
+
+.table  {
+    display: block;
+    background: url(pkrtable.jpg) black no-repeat;
+    background-size: contain;
+    height: 40vh;
+    background-position: center;
+    position: relative;
+}
+.seat1  {
+    position: absolute;
+    left: 42.5%;
+    top: 4.5%;
+}
+
+.seat1:hover, .seat2:hover, .seat3:hover, .seat4:hover, .seat5:hover       {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.seat2  {
+    position: absolute;
+    left: 52%;
+    top: 4.5%;
+}
+
+.seat3  {
+    position: absolute;
+    left: 48%;
+    top: 73%;
+    transform: rotate(180deg);
+}
+
+.seat4  {
+    position: absolute;
+    left: 64%;
+    top: 39%;
+    transform: rotate(90deg);
+}
+
+.seat5  {
+    position: absolute;
+    left: 31.5%;
+    top: 39%;
+    transform: rotate(-90deg);
+}
+
+.n1, .n2, .n3, .n4, .n5 {
+    position: absolute;
+}
+
+.n1{
+    left: 37%;
+    top: 43%;
+}
+
+.n2{
+    left: 44.5%;
+    top: 22%;
+}
+
+.n3{
+    left: 54%;
+    top: 22%;
+}
+
+.n4{
+    left: 62%;
+    top: 43%;
+}
+
+.n5{
+    left: 50%;
+    top: 87%;
+}
+.boock  {
+    background: url(../mattesnetsida/maxresdefault.png);
+    background-size: cover;
+    height: 30vh;
+    position: relative;
+}
+
+.formoro > form  {
+    margin-left: 35%;
+    padding-top: 2%;
+}
+
+.formoro > form > input[type=text], select, textarea {
+    width: 40%; /* Full width */
+    padding: 12px 0 12px 0; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.formoro > form > input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 380px) {
+
+    .heading-primary    {
+        font-size: 4vh;
+        letter-spacing: 5px;
+        text-shadow: 0.4vh 0.4vh black;
+    }
+
+    .hedori {
+        left: 0%;
+    }
+
+    .booking{
+        padding-top: 55vh;
+    }
+
+    .booking > .texten h1 {
+        font-size: 3vh;
+    }
+
+    .seat1  {
+        left: 25%;
+    }
+
+    .seat5  {
+        left: -5%;
+    }
+
+    .seat4  {
+        left: 82%;
+    }
+
+    .seat3{
+        left: 40%;
+        top: 72%;
+    }
+
+    .n1{
+        left: 15%;
+    }
+
+    .n2{
+        left: 35%;
+        top: 26%;
+    }
+
+    .n3{
+        left: 62%;
+        top: 26%;
+    }
+
+    .n4{
+        left: 79%;
+    }
+
+    .n5{
+        top: 90%;
+    }
+
+    .boock{
+        padding-bottom: 35vh;
+    }
+}  
